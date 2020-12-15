@@ -5,7 +5,6 @@ pipeline {
 		stage ('instalacion de dependencias'){
 			steps {
 				sh '''
-					cd PracticaSA/
 					npm install
 				'''
 			}
