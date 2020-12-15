@@ -21,9 +21,9 @@ describe("Multiplicar", function(){
     });
 });
 
-describe("Dividir", function(){
+/*describe("Dividir", function(){
     it("La funcion divide 2 numeros", function(){
         var value = app.Dividir(52,26);
         expect(value).toBe(2);
     });
-});
+});*/

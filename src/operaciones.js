@@ -13,7 +13,7 @@ exports.Multiplicar = function(n1, n2){
 exports.Restar = function(n1, n2){
     return n1 - n2;
 };
-
+/*
 exports.Dividir = function(n1, n2){
     return n1 / n2;
-};
+};*/
