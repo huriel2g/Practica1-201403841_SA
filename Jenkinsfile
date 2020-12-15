@@ -5,7 +5,7 @@ pipeline {
 		stage ('instalacion de dependencias'){
 			steps {
 				sh '''
-					cd Practica1-201403841_SA
+					cd PracticaSA/
 					npm install
 				'''
 			}
@@ -13,7 +13,7 @@ pipeline {
 		stage('Mi Build'){
 			steps {
 				sh '''
-					cd Practica1-201403841_SA
+					cd PracticaSA/
 					npm test
 				'''
 			}
@@ -21,7 +21,7 @@ pipeline {
 		stage ('Deploy practica'){
 			steps {
 				sh '''
-					cd Practica1-201403841_SA
+					cd PracticaSA/
 					npm start
                 '''
 			}
