@@ -28,10 +28,11 @@ app.post('/mostrarnumeros', (req, res) => {
     </body>
     </html>
     `;
+
   res.send(pagina);	
 })
 
 
 var server=app.listen(4000, () => {
-  console.log('Servidor web iniciado en el puerto 4000');
+  console.log('Servidor web iniciado: puerto 4000');
 });
