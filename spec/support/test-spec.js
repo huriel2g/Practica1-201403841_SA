@@ -1,4 +1,4 @@
-var app = require("../src/operaciones");
+var app = require("../../src/operaciones");
 
 describe("Sumando", function(){
     it("La funcion suma 2 numeros", function(){
