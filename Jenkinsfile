@@ -3,7 +3,7 @@ pipeline {
     tools { nodejs "node" }
 
     stages {
-		stage ('instalacion de dependencias'){
+		stage ('Dependencias'){
 			steps {
 				sh '''
                     npm install
@@ -15,13 +15,6 @@ pipeline {
 				sh '''
 					npm test
 				'''
-			}
-		}
-		stage ('Deploy practica'){
-			steps {
-				sh '''
-					npm start
-                '''
 			}
 		}
 	}
