@@ -6,15 +6,13 @@ pipeline {
 		stage ('instalacion de dependencias'){
 			steps {
 				sh '''
-                    cd PracticaSA/
-					npm install
+                    npm install
 				'''
 			}
 		}
-		stage('Mi Build'){
+		stage('Pruebas'){
 			steps {
 				sh '''
-					cd PracticaSA/
 					npm test
 				'''
 			}
@@ -22,7 +20,6 @@ pipeline {
 		stage ('Deploy practica'){
 			steps {
 				sh '''
-					cd PracticaSA/
 					npm start
                 '''
 			}
